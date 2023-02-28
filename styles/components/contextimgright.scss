@@ -1,0 +1,73 @@
+@keyframes circleOne {
+    from {
+        clip-path: circle(0rem);    }
+    to {
+        clip-path: circle(40rem);    }
+    
+}
+@keyframes circleTwo {
+    from {
+        clip-path: circle(0rem);    }
+    to {
+        clip-path: circle(28rem at 50% 0%);    }
+    
+}
+@keyframes blackTowhite {
+    0% ,70% {
+        background: transparent;
+    }
+    to {
+        background: white;
+    }
+    
+}
+
+.containerRight {
+    width: 36vw;
+    // height: 22rem;
+    // background-color: red;
+    // margin-top: -12rem;
+    display: block;
+    position: relative;
+    margin-left: -2.3rem;
+    // overflow: hidden;
+    // margin-left: -10rem;
+    // background: red;
+    &::after {
+            content: '';
+            display: block;
+            width: 75%;
+            height: 90%;
+            background: $yellow;
+            // backdrop-filter: blur(100px);
+            position: absolute;
+            bottom: 4.9rem;
+            right: 5.4rem;
+            // animation: 1.5s blackTowhite ease forwards;
+clip-path: polygon(0% 0%, 0% 100%, 12% 100%, 12% 12%, 87% 12%, 88% 86%, 11% 86%, 12% 100%, 100% 100%, 100% 0%);        
+            }
+        div {
+            width: 60%;
+            height: 57%;
+            background: white;
+            // background: repeating-linear-gradient(45deg, transparent 1px, $yellow 5px,$yellow 6px,transparent 9px, transparent 13px);            top: -5rem;
+            left: 3.5rem;
+            // top: 10rem;
+            position: absolute;
+            animation: circleOne 2.5s ease-in forwards;
+            
+        }
+        img {
+            width: 70%;
+            top: 0rem;
+            left: 2rem;
+            // left: 15rem;
+            // padding: 1rem;
+            position: absolute;
+            animation: circleTwo 1s ease-out forwards;
+            
+        }
+}
+// img.avatar{
+//     filter: drop-shadow(0px 0px 20px black)!important;
+// }

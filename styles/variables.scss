@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Neuton;
+    src: url(../../public/assets/font/Neuton-Regular.ttf);
+}
+@font-face {
+    font-family: Calibri;
+    src: url(../../public/assets/font/calibri.ttf);
+}
+// colors
+$yellow: yellow;
+$yellow50 : rgba(255, 255, 0, 0.5);
+$black: rgb(40, 40, 40);
+$grey: rgb(171, 171, 171);
+$grey50: rgba(171,171,171,0.5);
+$white : rgb(237, 237, 237);
+
+//width
+$fullWidth: 100vw;
+$width50:$fullWidth/2;
+
+// fonts
+$Ft-std: Calibri;
+$Ft-Neuton:Neuton;
+
+// animation
+$scaleVisible: scaleToVisible 1s ease-out;

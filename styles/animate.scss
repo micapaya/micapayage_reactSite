@@ -1,0 +1,58 @@
+@keyframes scaleToVisible {
+    from {
+        transform-origin: 50% 50%;
+        clip-path: circle(0rem at 50% -50%);
+        
+    }
+    to {
+        transform-origin: 50% 50%;
+        clip-path: circle(10rem at 50% 50%);
+        border:  none;
+    
+    }
+    
+}
+
+@keyframes animateOnScroll {
+    from {
+        transform: translateY(-2rem);
+        opacity: 0;
+        filter: blur(10px) brigthness(0%);
+    }
+
+    to {
+        transform: translateY(0);
+        filter: blur(0px) brigthness(100%);
+        opacity: 1;
+    }
+
+}
+
+@keyframes animateOnScrollB {
+    from {
+        transform: translateY(0vw);
+        opacity: 1;
+        filter: blur(0px) brigthness(100%);
+    }
+
+    to {
+        transform: translateY(-2rem);
+        filter: blur(10px) brigthness(0%);
+        opacity: 0;
+    }
+
+}
+
+.__animateEnterScroll {
+    perspective: 500rem;
+    transform-origin: 0% 0%;
+    backface-visibility: hidden;
+    animation: animateOnScroll 3s linear;
+}
+
+.__animateEnterScrollBack {
+    perspective: 500rem;
+    transform-origin: 0% 0%;
+    backface-visibility: hidden;
+    animation: animateOnScrollB 3s ease-in;
+}

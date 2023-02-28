@@ -1,0 +1,71 @@
+.skillsList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    position: relative;
+    margin: auto;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0;
+    box-shadow: -35px 15px 20px rgba(0, 0, 0, 0.2);
+    background: $black;
+    &::before {
+        content: "#SKILLS";
+        font-size: 1.2rem;
+        position: absolute;
+        top: -1.2rem;
+        left: 0;
+        width: 94%;
+        padding-left: 1rem;
+        border-bottom: 1px solid $yellow;
+        color: $white;
+        &::first-letter {
+            color: red;
+        }
+    }
+    // width: 7rem;
+    // height: 60vh;
+    li {
+        display: flex;
+        margin: auto;
+        span {
+            color: $white;
+            display: block;
+            width: 100%;
+            margin-right: 0rem;
+            font-size: .5rem;
+            text-transform: uppercase;
+            
+            &::after {
+                content: '';
+                width: 4rem;
+                position: absolute;
+                border: .001rem dashed $grey50;
+                margin-top: .64rem;
+                right: 4.99rem;
+            }
+        }
+        input {
+            width: 5rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+        a {
+            display: inline-block;
+            color: $black;
+            padding: .3rem;
+            padding-top: .1rem;
+            padding-bottom: .1rem;
+            font-size: .5rem;
+            background: $yellow;
+            margin: .3rem;
+            border-radius: .6rem;
+            font-weight: bolder;
+            transition: .6s ease;
+            &:hover {
+                background: white;
+            }
+        }
+    }
+}

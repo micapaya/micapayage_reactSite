@@ -1,0 +1,31 @@
+.logo{
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    // padding: 3rem;
+    height: 18vh;
+    .textLogo {
+        margin: auto;
+        margin-left: 3rem;
+        padding: 0rem;
+        padding-left: 0;
+        color: $grey;
+        line-height: .8rem;
+        h2 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: .4rem;
+                font-weight: 100;
+            }
+        
+        h3 {
+                font-size: .6rem;
+                text-align: right;
+                margin-right: .8rem;
+                font-weight: 100;
+        }
+    }
+   
+}
